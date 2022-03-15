@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!-- <link rel="stylesheet" href="res.nnu.edu.cn/ver/1.8.1_TR26/bh_components/mobile/1.0.0/bh-lib.min.css"> -->
+<link rel="stylesheet" href="C:\Users\Dell\Desktop\bh-lib.min.css">
+<link rel="stylesheet" href="C:\Users\Dell\Desktop\style.min.css">
+<link rel="stylesheet" href="C:\Users\Dell\Desktop\iconfont.css">
+<link rel="stylesheet" href="http://res.nnu.edu.cn/ver/1.8.1_TR26/fe_components/iconfont_mobile/iconfont.css">
+<link rel="stylesheet" href="http://ehallapp.nnu.edu.cn/publicapp/sys/itpub/public/css/style.css">
+<link rel="stylesheet" href="http://ehallapp.nnu.edu.cn/publicapp/sys/itpub/public/mob/css/mob.css">
+<!-- <link rel="stylesheet" href="http://res.nnu.edu.cn/ver/1.8.1_TR26/fe_components/skins/mint2.0/skin.css"> -->
+<!-- <link rel="stylesheet" href="http://res.nnu.edu.cn/ver/1.8.1_TR26/fe_components/mobile/MINT/style.min.css"> -->
+<link rel="stylesheet" href="C:\Users\Dell\Desktop\skin.css">
+<link rel="stylesheet" href="http://res.nnu.edu.cn/ver/1.8.1_TR26/bower_components/cropper/cropper.min.css">
+<script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js?v=1645244503300"></script>
+<script src="http://res.nnu.edu.cn/ver/1.8.1_TR26/bower_components/requirejs/require.js?v=1645244503300"></script>
+<script src="http://ehallapp.nnu.edu.cn/publicapp/sys/itpub/public/mob/js/mobutil.js?v=1645244503300"></script>
+<script src="http://ehallapp.nnu.edu.cn/publicapp/sys/itpub/public/mob/js/spriteFrame.js?v=1645244503300"></script>
+<script src="http://res.nnu.edu.cn/ver/1.8.1_TR26/bower_components/qrcode.js/qrcode.js?v=1645244503300"></script>
+<script src="http://res.nnu.edu.cn/ver/1.8.1_TR26/fe_components/mobile/bh_utils_mobile.js?v=1645244503300"></script>
+<body>
+   
+<div id="app">
+	<!---->
+	 <div class="mint-layout-container bh-bg-color-light cjauieny7 OPjdicwoslf">
+	 <div class="mint-layout-container pjhiwtwjo">
+	 <div class="mint-layout-spacing sjakx3nec OPjhiwxcyg" style="height: 15px;"></div> 
+	 <img src="	http://ehallapp.nnu.edu.cn/publicapp/sys/pubnjnumryjcxmgl/public/images/duigoufang.png" class="mint-image sjas257dv OPjhiwxcyh" style="width: 150px; height: 150px; top: 50%;
+        left: 50%; margin-left: -75px ">
+	 <div class="mint-textarea bh-color-gray sjat2iw05 OPjhiwxcyll1 mt-color-default" style="text-align:center"><b><big>学生</b></big></script></div>
+	  <br></br> 
+	 <div class="mint-text bh-color-gray sjat2iw05 OPjhiwxcyll mt-color-default" style="text-align:center;"><b><big>赵梓杰，验证成功，欢迎进入。</big></b></div>
+	 <br></br>
+	 <div class="mint-text bh-color-gray-3 OPjhiwxcyne mt-color-default" style="text-align:center">
+	    	<b><big>本次扫码时间：</big></b></div> 
+	 <div class="mint-text bh-color-red mt-color-default" style="font-size: 30px;text-align:center;">
+	 	<p id = "sy_time"></p>
+	 	<script>
+			function getTime(){  
+        str = ""  
+        var p = document.getElementById("sy_time");  
+        time =  new Date();  
+        year = time.getFullYear();  
+        month = time.getMonth() + 1; 
+        if(month<10){month="0"+month} 
+        day = time.getDate();  
+        hour = time.getHours();
+        if(hour<10){hour="0"+hour}  
+        minutes = time.getMinutes();
+        if(minutes<10){minutes="0"+minutes}  
+        seconds = time.getSeconds();
+        if(seconds<10){seconds="0"+seconds}
+        str = str + year +"-"+ month +"-"+ day + " " +hour+":"+minutes+":"+seconds;  
+
+        p.innerText = str;  
+
+        setTimeout(getTime,1000);  
+    }  
+
+
+    window.onload = function(){  
+        getTime();  
+    }  
+		</script>
+	 </div>
+	 </div>
+	 </div>
+</div>
+</body>
+</html>
