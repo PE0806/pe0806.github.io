@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>扫码结果</title>
 <meta charset="utf-8">
 
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -10,8 +9,11 @@
 <link rel="stylesheet" href="iconfont.css">
 <link rel="stylesheet" href="skin.css">
 <script src="https://res.wx.qq.com/open/js/jweixin-1.2.0.js?v=1645244503300"></script>
+
+
+
+
 <body>
-   
 <div id="app">
 	<!---->
 	 <div class="mint-layout-container bh-bg-color-light cjauieny7 OPjdicwoslf">
@@ -21,12 +23,29 @@
         left: 50%; margin-left: -75px">
 	 <div class="mint-textarea bh-color-gray sjat2iw05 OPjhiwxcyll1 mt-color-default" style="text-align:center"><b><big>学生</b></big></script></div>
 	  <br></br> 
-	 <div class="mint-text bh-color-gray sjat2iw05 OPjhiwxcyll mt-color-default" style="text-align:center;"><b><big>赵梓杰，验证成功，欢迎进入。</big></b></div>
-	 <br></br>
-	 <div class="mint-text bh-color-gray-3 OPjhiwxcyne mt-color-default" style="text-align:center">
-	    	<b><big>本次扫码时间：</big></b></div> 
+	  <p1 id="name"></p1>
+	 <div class="mint-text bh-color-gray sjat2iw05 OPjhiwxcyll mt-color-default" style="text-align:center;">
+            <b><big> <p id="demo">我的第一个段落。</p>
+             <script>
+             var str = window.location.href;
+             var arrStr = window.location.href.split("=");
+             var m = new Map([['14200131', '赵梓杰'],['14200214','朱子晨']]);
+             var str = m.get(arrStr[1]) + '，验证成功，欢迎进入。'
+             document.getElementById("demo").innerHTML=str;
+             </script>
+            </big></b></div>
+        
+	        <br></br>
+
+
+	 
+
+
+   <div class="mint-text bh-color-gray-3 OPjhiwxcyne mt-color-default" style="text-align:center"><b><big>本次扫码时间：</big></b></div> 
+    <div class="mint-text bh-color-gray-3 OPjhiwxcyne mt-color-default" style="text-align:center">
+          
 	 <div class="mint-text bh-color-red mt-color-default" style="font-size: 30px;text-align:center;">
-	 	<p id = "sy_time"></p>
+	 	<p3 id = "sy_time"></p3>
 	 	<script>
 			function getTime(){  
         str = ""  
@@ -50,7 +69,7 @@
     }  
 
 
-    window.onload = function(){  
+    window.onload = function(){
         getTime();  
     }  
 		</script>
