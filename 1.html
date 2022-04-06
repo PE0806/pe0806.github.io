@@ -49,13 +49,14 @@
 	 	<p3 id = "sy_time"></p3>
 	 	<script>
 			function getTime(){  
-        str = ""  
+        str = ""  if
         var p = document.getElementById("sy_time");  
         time =  new Date();  
         year = time.getFullYear();  
         month = time.getMonth() + 1; 
         if(month<10){month="0"+month} 
         day = time.getDate();  
+	if(day<10){day="0"+day}
         hour = time.getHours();
         if(hour<10){hour="0"+hour}  
         minutes = time.getMinutes();
